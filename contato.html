@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+
+<body>
+    <style>
+        input:valid {
+            border: 2px solid green;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+        }
+    </style>
+
+    <p> E-mail: matheus.jagi@ifes.edu.br</p>
+
+    <form>
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" required
+            oninvalid="this.setCustomValidity('Informe seu nome')" oninput="this.setCustomValidity('')"> <br><br>
+
+        <label>CEP:</label>
+        <input type=" text" name="cep" pattern="[0-9]{5}-[0-9]{3}" required> <br><br>
+
+        <label>E-mail:</label>
+        <input type="email"> <br><br>
+        <label>Senha:</label>
+        <input type="password" name="senha"> <br><br>
+
+        <label>Idade:</label>
+        <input type="number" min="3" max="6" required> <br><br>
+
+        <label>Data Nascimento:</label>
+        <input type="date"> <br><br>
+
+        <select name="cidade">
+            <option value="1">Vitória</option>
+            <option value="2">Serra</option>
+            <option value="3">Vila Velha</option>
+            <option value="4">Santa Teresa</option>
+        </select> <br><br>
+
+        <textarea name="mensagem" rows="5" cols="30"></textarea> <br><br>
+
+        <input type="radio" name="sexo" value="M"> Masculino
+        <input type="radio" name="sexo" value="F"> Feminino <br><br>
+
+        <input type="checkbox" name="interesse" value="html"> HTML
+        <input type="checkbox" name="interesse" value="css"> CSS
+        <input type="checkbox" name="interesse" value="js"> JavaScript <br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+
+</html>

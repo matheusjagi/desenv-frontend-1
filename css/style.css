@@ -1,0 +1,20 @@
+.azul {
+    color: rgb(76, 0, 255);
+    font-weight: bold;
+}
+
+/* #teste {
+    font-size: 40px;
+} */
+
+.editable:empty:before {
+    content: "Digite algo...";
+    color: gray;
+}
+
+div {
+    background-color: gray;
+    height: 100vh;
+    width: 50vw;
+    font-size: 20px;
+}
